@@ -1,5 +1,10 @@
 # Zookeeper: Distributed Scoreboard
 
+The distributed scoreboard shows player scores for a game. A Zookeeper protocol is built that maintains two score lists. One score list contains the N most recent games and the second list maintains the N highest scores.
+
+A watcher process displays the two lists and updates the list in real time as necessary. A player process does one of three actions: join, leave, or post a score.
+
+### Steps
 1. Clone this repository
 2. Go to the cloned directory
 3. Execute the following commands to setup your environment.
